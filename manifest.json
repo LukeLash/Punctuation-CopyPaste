@@ -1,0 +1,36 @@
+{
+  "name": "Punctuation CopyPaste",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Don't have to use google to get em dashes anymore!",
+  "permissions": ["activeTab"],
+
+  "chrome_url_overrides": {
+
+  },
+
+  "icons": {
+     "16": "logo16.png",
+     "48": "logo48.png",
+     "128": "logo128.png"
+ },
+
+ "browser_action": {
+   "default_icon": "logo48.png",
+   "default_popup": "popup.html",
+   "default_title": "Punctuation CopyPaste"
+ },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["popup.css"],
+      "js": ["popup.js"]
+    }
+  ],
+
+"background": {
+  "scripts": ["popup.js"]
+}
+
+}

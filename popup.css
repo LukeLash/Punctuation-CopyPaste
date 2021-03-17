@@ -1,0 +1,11 @@
+#popupBody {
+  width: 200px;
+  height: 400px;
+  background-color: rgb(119, 221, 119);
+  font-family: "Segoe UI";
+  text-align: center;
+}
+
+#popupTitle {
+  text-align: center;
+}
